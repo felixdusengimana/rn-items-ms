@@ -7,17 +7,16 @@ import Messages from '../screens/Messages';
 import Profile from '../screens/Profile';
 import Cart from '../screens/Cart';
 
+import DrawerNavigator from './DrawerNavigator'
+
 
 const Stack = createStackNavigator();
 const StackNavigator = () => {
  return (
 <Stack.Navigator>
-<Stack.Screen name="Home" component={Home} 
- options={{
-    title: 'Home',
-    headerStyle: {
-      backgroundColor: '#09f'    
-    },
+<Stack.Screen name="Home" component={DrawerNavigator} 
+options={{
+  headerShown: false
   }}
   />
 <Stack.Screen name="Messages" component={Messages} />

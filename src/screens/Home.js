@@ -10,6 +10,11 @@ export default function Home({navigation}) {
         onPress={() => navigation.navigate('Messages')}>
         <Text>Go to Messages</Text>
       </Pressable>
+      <Pressable
+      style={styles.button}
+      onPress={()=>navigation.toggleDrawer()}>
+        <Text>Open Sidebar</Text>
+      </Pressable>
     </View>
   )
 }
